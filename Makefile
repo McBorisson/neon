@@ -124,7 +124,7 @@ $(ACTIVATE): requirements.txt gpu_requirements.txt vis_requirements.txt
 	@. $(ACTIVATE); pip install -U pip
 	@# cython added separately due to h5py dependency ordering bug.  See:
 	@# https://github.com/h5py/h5py/issues/535
-	@. $(ACTIVATE); pip install cython==0.25
+	@. $(ACTIVATE); pip install cython
 	@. $(ACTIVATE); pip install -r requirements.txt
 	@. $(ACTIVATE); $(MAKE) aeon_install
 ifeq ($(VIS), true)
