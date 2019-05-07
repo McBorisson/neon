@@ -37,7 +37,7 @@ RUN pip --no-cache-dir install --upgrade \
         setuptools && \
     pip --no-cache-dir install --upgrade --force-reinstall virtualenv
 
-RUN git clone https://github.com/NervanaSystems/neon /neon && \
+RUN git clone https://github.com/McBorisson/neon /neon && \
     make -C /neon sysinstall && \
     rm -rf /neon/mklml_*.tgz
 
