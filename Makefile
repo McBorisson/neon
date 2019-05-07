@@ -167,7 +167,7 @@ sysdeps:
 	@echo "Installing neon dependencies system wide..."
 	@# cython added separately due to h5py dependency ordering bug.  See:
 	@# https://github.com/h5py/h5py/issues/535
-	@pip install cython==0.23.1
+	@pip install cython
 	@pip install -r requirements.txt
 	$(MAKE) aeon_install
 ifeq ($(VIS), true)
